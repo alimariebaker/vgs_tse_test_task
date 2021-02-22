@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>(ﾉ◕ヮ◕)ﾉ:･ﾟ✧:･ﾟ✧ outbound</title>
+    <link rel="stylesheet" href="../static/main.css">
+  </head>
+  <body>
+    <p>enter aliased info.</p>
+    <form method='post' action='/reveal'>
+      <h1>(ﾉ◕ヮ◕)ﾉ:･ﾟ✧:･ﾟ✧ Reveal Yo' Data!</h1>
+      <div id="cc-number">
+        <input type="text" placeholder="card number alias" class="form-field" name="card_number"></input>
+      </div>
+      <div class="form-field-group">
+        <div id="cc-expiration-date">
+          <input type="text" placeholder="exp. date alias" class="form-field" name="card_exp"></input>
+        </div>
+        <div id="cc-cvv">
+          <input type="text" placeholder="cvv" class="form-field" name="card_cvv"></input>
+        </div>
+      </div>
+      <button type="submit">reveal</button>
+    </form>
+  </body>
+</html>
