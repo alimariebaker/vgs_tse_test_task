@@ -1,5 +1,5 @@
 from app import app
-from flask import render_template, request, json
+from flask import render_template, request, json, jsonify
 import requests
 import os
 
@@ -15,7 +15,8 @@ def form():
 def secure():
   aliased_data = request.get_json(force=True)
   print(aliased_data)
-  return render_template('secure.html')
+  return jsonify(aliased_data)
+  # return render_template('secure.html')
 
 @app.route('/outbound', methods=['GET'])
 def outbound():
